@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Phân loại rác tại nguồn – Chi đoàn 11A8, THPT Lý Thường Kiệt</title>
+<meta name="description" content="Hướng dẫn phân loại rác tại nguồn: rác tái chế và rác thông thường. Chi đoàn 11A8, THPT Lý Thường Kiệt.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --coral:#E8827A; --coral-ink:#3A0F0B;
+  --teal:#215C69; --teal-soft:#BFE6EE;
+  --cyan:#CCFAFF; --ink:#10343C;
+  --yellow:#FFBD59; --green:#6CCB5F; --green-ink:#0E3B22;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cyan);color:var(--ink);font-family:'Be Vietnam Pro',system-ui,Arial,sans-serif;font-size:17px;line-height:1.55}
+img,svg{max-width:100%}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+
+/* Hero */
+.hero{background:var(--coral);color:var(--coral-ink);padding:44px 0 40px}
+.hero h1{margin:0;font-size:clamp(32px,7vw,64px);line-height:1.05;font-weight:900;letter-spacing:-.5px}
+.hero .en{margin:14px 0 0;font-size:clamp(15px,2.6vw,22px);font-weight:700;color:#fff;letter-spacing:.5px}
+.hero .who{margin:22px 0 0;font-weight:600}
+
+section{padding:40px 0 0}
+h2{margin:0 0 6px;font-size:clamp(24px,4.4vw,34px);line-height:1.15;font-weight:800;color:var(--teal)}
+.lead{margin:0 0 20px;max-width:62ch}
+
+/* Video */
+.video{position:relative;aspect-ratio:16/9;background:var(--teal);border-radius:24px;overflow:hidden}
+.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.video .empty{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;color:#fff;text-align:center;padding:20px}
+.video .empty svg{width:64px;height:64px}
+
+/* Groups */
+.groups{display:grid;gap:20px;grid-template-columns:1fr}
+@media(min-width:760px){.groups{grid-template-columns:1fr 1fr}}
+.group{background:var(--teal);color:#fff;border-radius:28px;overflow:hidden}
+.group header{padding:22px 24px;display:flex;gap:16px;align-items:center}
+.group.rec header{background:var(--green);color:var(--green-ink)}
+.group.gen header{background:var(--yellow);color:#4A3000}
+.group header h3{margin:0;font-size:26px;line-height:1.1;font-weight:900}
+.group header p{margin:4px 0 0;font-size:15px;font-weight:600;opacity:.85}
+.group ul{list-style:none;margin:0;padding:22px 24px 8px;display:grid;gap:16px}
+.group li{display:flex;gap:14px;align-items:flex-start}
+.group li svg{flex:none;margin-top:2px}
+.group li b{display:block;font-size:19px;line-height:1.3}
+.group li span{display:block;font-size:15px;color:var(--teal-soft)}
+.tip{margin:8px 24px 24px;padding:14px 16px;border-radius:16px;background:rgba(255,255,255,.12);font-weight:600;font-size:16px}
+
+/* Hazard */
+.hazard{margin-top:20px;background:var(--coral);color:var(--coral-ink);border-radius:28px;padding:22px 24px;display:flex;gap:20px;align-items:center}
+.hazard h3{margin:0 0 4px;font-size:22px;font-weight:900}
+.hazard p{margin:0;font-weight:600}
+.hazard svg{flex:none}
+@media(max-width:560px){.hazard{flex-direction:column;align-items:flex-start}}
+
+/* Charts */
+.charts{display:grid;gap:20px;grid-template-columns:1fr}
+@media(min-width:760px){.charts{grid-template-columns:1fr 1fr}}
+.chart{border-radius:28px;padding:24px}
+.chart h3{margin:0;font-size:21px;line-height:1.2;font-weight:800}
+.chart .sub{margin:2px 0 16px;font-size:15px;font-weight:600}
+.chart.dark{background:var(--teal);color:#fff}
+.chart.dark .sub{color:var(--teal-soft)}
+.chart.light{background:var(--coral);color:var(--coral-ink)}
+.chart.light .sub{color:#fff}
+.donut-row{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+.donut-row svg{width:170px;height:170px;flex:none}
+.legend{list-style:none;margin:0;padding:0;display:grid;gap:10px;font-size:16px;line-height:1.3}
+.legend i{display:inline-block;width:14px;height:14px;border-radius:4px;margin-right:8px;vertical-align:-1px}
+.bars{display:flex;gap:28px;align-items:flex-end;height:230px;padding:0 20px}
+.bar{flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;height:100%}
+.bar strong{font-size:22px;margin-bottom:6px}
+.bar .col{width:100%;border-radius:12px 12px 0 0}
+.bar small{margin-top:8px;text-align:center;font-weight:600;font-size:14px;line-height:1.2;min-height:34px}
+.src{margin:14px 0 0;font-size:14px;color:#3E7684;max-width:80ch}
+
+/* Pledge */
+.pledge{margin-top:0;background:#fff;border-radius:28px;padding:28px}
+.pledge ol{margin:12px 0 0;padding-left:22px;display:grid;gap:8px;font-weight:600}
+.pledge ol li::marker{color:var(--coral);font-weight:900}
+
+footer{margin-top:48px;background:var(--teal);color:#fff;padding:28px 0}
+footer p{margin:0}
+footer .name{font-weight:800;font-size:19px}
+footer .small{font-size:14px;color:var(--teal-soft);margin-top:6px}
+
+:focus-visible{outline:3px solid var(--coral-ink);outline-offset:3px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>Phân loại rác<br>bảo vệ môi trường</h1>
+    <p class="en">Sort your waste – protect the environment</p>
+    <p class="who">Chi đoàn 11A8 · THPT Lý Thường Kiệt</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section aria-labelledby="video-h">
+    <h2 id="video-h">Xem video hướng dẫn</h2>
+    <p class="lead">Chỉ vài phút để biết mỗi loại rác bỏ vào thùng nào.</p>
+    <div class="video" id="video"></div>
+  </section>
+
+  <section aria-labelledby="why-h">
+    <h2 id="why-h">Vì sao phải phân loại rác?</h2>
+    <p class="lead">Rác được tách đúng từ đầu thì giấy, nhựa, kim loại và thủy tinh mới tái chế được. Rác trộn lẫn, bẩn thì khó tái chế hơn và phần lớn phải đem chôn lấp.</p>
+  </section>
+
+  <section aria-labelledby="groups-h">
+    <h2 id="groups-h">Hai nhóm rác chính</h2>
+    <p class="lead">Nhìn màu thùng là biết: xanh lá cho rác tái chế, vàng cho rác thông thường.</p>
+    <div class="groups">
+
+      <article class="group rec">
+        <header>
+          <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 19H4.8a1.8 1.8 0 0 1-1.5-2.7L5 13.5"/><path d="M11 19h6.2a1.8 1.8 0 0 0 1.5-.9l1-1.8"/><path d="M14 16l-3 3 3 3"/><path d="M8.3 9.7L10 6.8a1.8 1.8 0 0 1 3.1 0l.9 1.5"/><path d="M5 8l3.3 1.7L7 13"/><path d="M17 12.5l2.5-3.8L16 7.5"/></svg>
+          <div><h3>Rác tái chế</h3><p>Thùng xanh lá · Recyclable waste</p></div>
+        </header>
+        <ul>
+          <li><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#6CCB5F" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><div><b>Giấy, bìa carton</b><span>Paper &amp; cardboard</span></div></li>
+          <li><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#6CCB5F" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><div><b>Chai nhựa, hộp nhựa</b><span>Plastic bottles &amp; containers</span></div></li>
+          <li><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#6CCB5F" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><div><b>Vỏ lon, hộp kim loại</b><span>Cans &amp; metal containers</span></div></li>
+          <li><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#6CCB5F" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><div><b>Chai lọ thủy tinh</b><span>Glass bottles &amp; jars</span></div></li>
+        </ul>
+        <p class="tip">Mẹo: đổ sạch bên trong, ép dẹp, để khô rồi mới bỏ.</p>
+      </article>
+
+      <article class="group gen">
+        <header>
+          <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18"/><path d="M8 6V4h8v2"/><path d="M6 6l1 14h10l1-14"/><path d="M10 10v6M14 10v6"/></svg>
+          <div><h3>Rác thông thường</h3><p>Thùng vàng · General waste</p></div>
+        </header>
+        <ul>
+          <li><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFBD59" stroke-width="3.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg><div><b>Thức ăn thừa, rau củ</b><span>Food waste &amp; leftover vegetables</span></div></li>
+          <li><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFBD59" stroke-width="3.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg><div><b>Túi nilon bẩn, màng bọc</b><span>Soiled plastic bags &amp; cling film</span></div></li>
+          <li><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFBD59" stroke-width="3.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg><div><b>Giấy ăn, khăn giấy đã dùng</b><span>Used tissues</span></div></li>
+          <li><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFBD59" stroke-width="3.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg><div><b>Rác bẩn, khó phân hủy</b><span>Contaminated &amp; hard-to-decompose waste</span></div></li>
+        </ul>
+        <p class="tip">Mẹo: gói kín rác ướt, bẩn để thùng không bị hôi.</p>
+      </article>
+    </div>
+
+    <div class="hazard">
+      <svg width="72" height="72" viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="5" fill="#FFBD59"/><path d="M12 4L2.5 20h19z" fill="none" stroke="#111" stroke-width="1.8" stroke-linejoin="round"/><path d="M12 10v5" stroke="#111" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="17.6" r="1.1" fill="#111"/></svg>
+      <div>
+        <h3>Rác y tế và rác nguy hại: bỏ riêng</h3>
+        <p>Bông băng, kim tiêm, khẩu trang y tế, pin, bóng đèn, thuốc hết hạn không bỏ chung với rác khác. Hãy đưa đến điểm thu gom riêng.</p>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="data-h">
+    <h2 id="data-h">Vài con số về rác thải ở Việt Nam</h2>
+    <p class="lead">Hơn một nửa rác sinh hoạt là chất hữu cơ, và phần lớn rác vẫn bị chôn lấp.</p>
+    <div class="charts">
+
+      <div class="chart dark">
+        <h3>Rác sinh hoạt gồm những gì?</h3>
+        <p class="sub">What is household waste made of?</p>
+        <div class="donut-row">
+          <svg viewBox="0 0 180 180" role="img" aria-label="Biểu đồ tròn: hữu cơ khoảng 60%, nhựa và túi nilon khoảng 10%, giấy, kim loại, thủy tinh và khác khoảng 30%">
+            <g transform="rotate(-90 90 90)" fill="none" stroke-width="38">
+              <circle cx="90" cy="90" r="70" stroke="#E8827A" stroke-dasharray="263.9 439.8" stroke-dashoffset="0"/>
+              <circle cx="90" cy="90" r="70" stroke="#FFBD59" stroke-dasharray="44 439.8" stroke-dashoffset="-263.9"/>
+              <circle cx="90" cy="90" r="70" stroke="#6CCB5F" stroke-dasharray="131.9 439.8" stroke-dashoffset="-307.9"/>
+            </g>
+          </svg>
+          <ul class="legend">
+            <li><i style="background:#E8827A"></i><b>50–70%</b> hữu cơ, thức ăn</li>
+            <li><i style="background:#FFBD59"></i><b>8–12%</b> nhựa, túi nilon</li>
+            <li><i style="background:#6CCB5F"></i><b>~30%</b> giấy, kim loại, thủy tinh, khác</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="chart light">
+        <h3>Rác đi về đâu?</h3>
+        <p class="sub">Where does our waste go?</p>
+        <div class="bars" role="img" aria-label="Biểu đồ cột: chôn lấp 60 đến 65 phần trăm, tái chế và xử lý khác 35 đến 40 phần trăm">
+          <div class="bar"><strong>60–65%</strong><div class="col" style="height:62.5%;background:#215C69"></div><small>Chôn lấp</small></div>
+          <div class="bar"><strong>35–40%</strong><div class="col" style="height:37.5%;background:#fff"></div><small>Tái chế và xử lý khác</small></div>
+        </div>
+      </div>
+    </div>
+    <p class="src">Nguồn: VnExpress (thành phần hữu cơ); Bộ Tài nguyên và Môi trường qua VnEconomy (nhựa, túi nilon); Báo Đại Đoàn Kết (tỉ lệ chôn lấp). Biểu đồ vẽ theo giá trị giữa khoảng công bố; phần "khác" là ước tính.</p>
+  </section>
+
+  <section aria-labelledby="pledge-h">
+    <div class="pledge">
+      <h2 id="pledge-h">Cam kết của lớp 11A8</h2>
+      <ol>
+        <li>Bỏ rác đúng thùng, đúng màu mỗi ngày.</li>
+        <li>Đổ sạch, ép dẹp chai lon trước khi bỏ vào thùng tái chế.</li>
+        <li>Nhắc bạn bè cùng phân loại rác ở lớp và ở nhà.</li>
+      </ol>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="name">Chi đoàn 11A8 · THPT Lý Thường Kiệt</p>
+    <p class="small">Sản phẩm tuyên truyền "Phân loại rác tại nguồn".</p>
+  </div>
+</footer>
+
+<script>
+/* ===== ĐỔI VIDEO TẠI ĐÂY =====
+   Dán phần ID của link YouTube vào VIDEO_ID.
+   Ví dụ link https://www.youtube.com/watch?v=abc123XYZ  ->  VIDEO_ID = "abc123XYZ"
+   Để trống thì trang hiện khung "Video sẽ được cập nhật". */
+var VIDEO_ID = "";
+
+(function () {
+  var box = document.getElementById("video");
+  if (VIDEO_ID) {
+    var f = document.createElement("iframe");
+    f.src = "https://www.youtube-nocookie.com/embed/" + encodeURIComponent(VIDEO_ID);
+    f.title = "Video hướng dẫn phân loại rác";
+    f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+    f.allowFullscreen = true;
+    f.loading = "lazy";
+    box.appendChild(f);
+  } else {
+    box.innerHTML = '<div class="empty"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M10 9.5v5l4.5-2.5z"/></svg><strong>Video sẽ được cập nhật</strong></div>';
+  }
+})();
+</script>
+</body>
+</html>
